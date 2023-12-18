@@ -17,15 +17,13 @@ const InputField = () => {
     }, [count, setNumberOfCards])
     
   return (
-    <div>
-        <label for='input'>Enter Number of cards</label>
+    <div className="flex flex-col md:flex-row items-center justify-center mb-5">
+        <label className="md:mr-3">Enter the Number of cards</label>
         <input type="number" 
             placeholder="Number of Cards to show"
             value={count} 
             onChange={handleInputChange}
-            id='input'
-            name='input'
-            className="border-solid border-2 rounded-lg p-1 m-5 w-96"
+            className="border-solid border-2 rounded-lg p-1 w-72 my-1"
         />
     </div>
   )

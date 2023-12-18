@@ -5,10 +5,7 @@ import './card.css';
 const Card = ({data}) => {
     return (
         <div className='flex flex-col w-72 card'>
-            <img
-                src={data.image}
-                alt="Card"
-            />
+            <img src={data.image} alt="Card" />
 
             <div className='mx-4 mt-2'>
                 <h2 className='font-medium text-xl text-gray-900'>
@@ -24,14 +21,11 @@ const Card = ({data}) => {
                     {data.price > 0 ? 
                         <span 
                             className={
-                                (data.discount > 0 && data.price > 0) 
-                                ? "line-through" : 
-                                'color_text'
+                                (data.discount > 0 && data.price > 0)  ? "line-through" : 'color_text'
                             }> 
-
                             ${data.price} 
                         </span>
-                    : 
+                        : 
                         <span className='color_text'>
                             FREE
                         </span>

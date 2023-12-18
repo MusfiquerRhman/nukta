@@ -6,6 +6,7 @@
     animation-name: example;
     animation-duration: 0.75s;
 }
+
 @keyframes example {
     from {
         transform:translateX(-200%);
