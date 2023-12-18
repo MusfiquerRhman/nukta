@@ -37,7 +37,7 @@ const Card = ({data}) => {
                         <span className='color_text'>
                             { `$${data.price - data.discount  }`}
                         </span>
-                        <span className='styles.discount'>
+                        <span className='discount'>
                             You Save ${data.discount}
                         </span>
                     </>
